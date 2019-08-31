@@ -11,4 +11,38 @@ package com.udec.figuras;
  */
 public class Esfera extends Figuras3D{
     
+    private double radio;
+
+    public Esfera(double coordenadaXA, double coordenadaYA, double coordenadaXB, double coordenadaYB) {
+        super(coordenadaXA, coordenadaYA, coordenadaXB, coordenadaYB);
+    }
+    
+    
+    
+    @Override
+    public void hallarDatos() {
+        radio =hallarLado(this.getCoordenadaXA(), this.getCoordenadaYA(), this.getCoordenadaXB(), this.getCoordenadaYB());
+        this.setArea(4*PI* Math.pow(radio,2));
+        this.setVolumen((4/3)* PI* Math.pow(radio,3));
+        hallarTipo();
+    }
+
+    @Override
+    public void hallarTipo() {
+        this.setTipo("Esfera");
+    }
+
+    public double getRadio() {
+        return radio;
+    }
+
+    public void setRadio(double radio) {
+        this.radio = radio;
+    }
+    
+
+    
+
+    
+    
 }

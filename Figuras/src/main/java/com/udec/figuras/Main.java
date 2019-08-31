@@ -7,9 +7,10 @@ package com.udec.figuras;
 
 /**
  *
- * @author Tatiana Moreno, Andres Chila
+ * @author AndresChila
  */
-public interface Comportamiento {
-    public void hallarDatos();
-    public void hallarTipo();
+public class Main {
+    public static void main(String[] args){
+        Principal principal = new  Principal();
+    }
 }
