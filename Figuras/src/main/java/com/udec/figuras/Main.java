@@ -7,7 +7,7 @@ package com.udec.figuras;
 
 /**
  *
- * @author AndresChila
+ * @author Andres Chila, Tatiana Moreno
  */
 public class Main {
     public static void main(String[] args){

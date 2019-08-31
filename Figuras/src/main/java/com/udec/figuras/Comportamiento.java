@@ -6,10 +6,12 @@
 package com.udec.figuras;
 
 /**
- *
+ * Interfaz con el comportamiento de las figuras
  * @author Tatiana Moreno, Andres Chila
  */
 public interface Comportamiento {
+    //Comportamiento para hallar los datos 
     public void hallarDatos();
+    //Comportamiento para hallar el tipo de figura
     public void hallarTipo();
 }

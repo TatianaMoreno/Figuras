@@ -11,12 +11,14 @@ import java.util.Scanner;
 
 /**
  *
- * @author AndresChila
+ * @author Andres Chila, Tatiana Moreno
  */
 public class Principal {
-
+    //Lista que guarda todas las figuras que se crean
     private List<Figuras> listaFiguras = new ArrayList<>();
+    //Variable que guarda la respuesta para proximas figuras
     private String respuesta, sigue = "si";
+    //Variables que permite obtener lo escrito en consola
     Scanner scannerNumeros = new Scanner(System.in);
     Scanner scannerStrings = new Scanner(System.in);
     //posicion x, y del primer punto (A)
@@ -28,7 +30,7 @@ public class Principal {
     //posicion x, y del tercer punto (C)
     private double coordenadaXC;
     private double coordenadaYC;
-
+    
     public Principal() {
         do {
             System.out.print("Que figura desea ingresar?: ");
@@ -61,7 +63,7 @@ public class Principal {
         } while (sigue.equals("si"));
         imprimirLista();
     }
-
+    //Metodo que imprime los calculos resultantes de las figuras
     public void imprimirLista() {
         for (Figuras lista : listaFiguras) {
             if (lista instanceof Circulo) {
@@ -114,7 +116,7 @@ public class Principal {
             System.out.println("--------------------------------------");
         }
     }
-
+    //Metodo de set para el Circulo
     public void setearCosasCirculo() {
         System.out.print("Ingrese coordenada X del primer punto: ");
         coordenadaXA = scannerNumeros.nextDouble();
@@ -127,7 +129,8 @@ public class Principal {
         Figuras circulo = new Circulo(coordenadaXA, coordenadaYA, coordenadaXB, coordenadaYB);
         listaFiguras.add(circulo);
     }
-
+    
+    //Metodo de set para el Cuadrado
     public void setearCosasCuadrado() {
         System.out.print("Ingrese coordenada X del primer punto: ");
         coordenadaXA = scannerNumeros.nextDouble();
@@ -146,6 +149,7 @@ public class Principal {
         listaFiguras.add(cuadrado);
     }
 
+    //Metodo de set para el Triangulo
     public void setearCosasTriangulo() {
         System.out.print("Ingrese coordenada X del primer punto: ");
         coordenadaXA = scannerNumeros.nextDouble();
@@ -164,6 +168,7 @@ public class Principal {
         listaFiguras.add(triangulo);
     }
 
+    //Metodo de set para la esfera
     public void setearCosasEsfera() {
         System.out.print("Ingrese coordenada X del primer punto: ");
         coordenadaXA = scannerNumeros.nextDouble();
@@ -178,6 +183,7 @@ public class Principal {
         listaFiguras.add(esfera);
     }
 
+    //Metodo de set para el Cubo
     public void setearCosasCubo() {
         System.out.print("Ingrese coordenada X del primer punto (base): ");
         coordenadaXA = scannerNumeros.nextDouble();
@@ -198,6 +204,7 @@ public class Principal {
         listaFiguras.add(cubo);
     }
 
+    //Metodo de set para la Piramide
     public void setearCosasPiramide() {
         System.out.print("Ingrese coordenada X del primer punto (base): ");
         coordenadaXA = scannerNumeros.nextDouble();
