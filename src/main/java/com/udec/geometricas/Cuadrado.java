@@ -9,6 +9,6 @@ package com.udec.geometricas;
  *
  * @author Tatiana Moreno, Andres Chila
  */
-public abstract class Figuras3D extends Figuras{
+public class Cuadrado extends Figuras2D{
     
 }

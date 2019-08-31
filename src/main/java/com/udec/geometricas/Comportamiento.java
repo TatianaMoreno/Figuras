@@ -7,7 +7,7 @@ package com.udec.geometricas;
 
 /**
  *
- * @author tmore
+ * @author Tatiana Moreno, Andres Chila
  */
 public interface Comportamiento {
     

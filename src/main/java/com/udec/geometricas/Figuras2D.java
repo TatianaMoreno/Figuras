@@ -7,8 +7,8 @@ package com.udec.geometricas;
 
 /**
  *
- * @author tmore
+ * @author Tatiana Moreno, Andres Chila
  */
-public abstract class Figuras2D {
+public abstract class Figuras2D extends Figuras{
     
 }
