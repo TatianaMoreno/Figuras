@@ -10,5 +10,6 @@ package com.udec.geometricas;
  * @author Tatiana Moreno, Andres Chila
  */
 public abstract class Figuras2D extends Figuras{
+    private double perimetro;
     
 }
