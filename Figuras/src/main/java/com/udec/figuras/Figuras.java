@@ -8,7 +8,7 @@ package com.udec.figuras;
 import com.sun.corba.se.impl.util.PackagePrefixChecker;
 
 /**
- *
+ *  Clase Super Padre 
  * @author Tatiana Moreno, Andres Chila
  */
 public abstract class Figuras implements Comportamiento{
@@ -18,9 +18,9 @@ public abstract class Figuras implements Comportamiento{
     //posicion x, y del segundo punto (B)
     private double coordenadaXB;
     private double coordenadaYB;
-    
+    //Variable que guarda el area de las figuras
     private double area;
-
+    //Constructor de la clase
     public Figuras(double coordenadaXA, double coordenadaYA, double coordenadaXB, double coordenadaYB) {
         this.coordenadaXA = coordenadaXA;
         this.coordenadaYA = coordenadaYA;
@@ -28,43 +28,52 @@ public abstract class Figuras implements Comportamiento{
         this.coordenadaYB = coordenadaYB;
         
     }
-
+    //Metodo get del area
     public double getArea() {
         return area;
     }
 
+    //Metodo set del area
     public void setArea(double area) {
         this.area = area;
     }
     
+    //Metodo get de las coordenadas en X y A
     public double getCoordenadaXA() {
         return coordenadaXA;
     }
 
+    //Metodo set de las coordenadas en X y A
     public void setCoordenadaXA(double coordenadaXA) {
         this.coordenadaXA = coordenadaXA;
     }
 
+    //Metodo get de las coordenadas en Y y A
     public double getCoordenadaYA() {
         return coordenadaYA;
     }
 
+    //Metodo set de las coordenadas en Y y A
     public void setCoordenadaYA(double coordenadaYA) {
         this.coordenadaYA = coordenadaYA;
     }
 
+    //Metodo get de las coordenadas en X y B
     public double getCoordenadaXB() {
         return coordenadaXB;
     }
 
+    //Metodo set de las coordenadas en X y B
     public void setCoordenadaXB(double coordenadaXB) {
         this.coordenadaXB = coordenadaXB;
     }
 
+    //Metodo get de las coordenadas en Y y B
     public double getCoordenadaYB() {
         return coordenadaYB;
     }
 
+    //Metodo set de las coordenadas en Y y B
     public void setCoordenadaYB(double coordenadaYB) {
         this.coordenadaYB = coordenadaYB;
     }

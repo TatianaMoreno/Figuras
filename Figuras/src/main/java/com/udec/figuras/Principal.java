@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- *
+ * Clase Principal 
  * @author Andres Chila, Tatiana Moreno
  */
 public class Principal {

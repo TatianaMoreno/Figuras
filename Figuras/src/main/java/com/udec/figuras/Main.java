@@ -6,7 +6,7 @@
 package com.udec.figuras;
 
 /**
- *
+ * Clase main donde se ejecuta el programa
  * @author Andres Chila, Tatiana Moreno
  */
 public class Main {

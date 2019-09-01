@@ -6,13 +6,13 @@
 package com.udec.figuras;
 
 /**
- *
+ * Clase Hija Esfera
  * @author Tatiana Moreno, Andres Chila
  */
 public class Esfera extends Figuras3D{
-    
+    //Variable que guarda el radio de la esfera
     private double radio;
-
+    //El constructor de la clase
     public Esfera(double coordenadaXA, double coordenadaYA, double coordenadaXB, double coordenadaYB) {
         super(coordenadaXA, coordenadaYA, coordenadaXB, coordenadaYB);
     }
@@ -31,11 +31,12 @@ public class Esfera extends Figuras3D{
     public void hallarTipo() {
         this.setTipo("Esfera");
     }
-
+    //Metodo get para el radio
     public double getRadio() {
         return radio;
     }
-
+    
+    //Metodo get del radio
     public void setRadio(double radio) {
         this.radio = radio;
     }
