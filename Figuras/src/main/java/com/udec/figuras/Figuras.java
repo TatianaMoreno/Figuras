@@ -5,8 +5,6 @@
  */
 package com.udec.figuras;
 
-import com.sun.corba.se.impl.util.PackagePrefixChecker;
-
 /**
  *  Clase Super Padre 
  * @author Tatiana Moreno, Andres Chila
@@ -38,42 +36,42 @@ public abstract class Figuras implements Comportamiento{
         this.area = area;
     }
     
-    //Metodo get de las coordenadas en X y A
+    //Metodo get de las coordenadas en X del punto A
     public double getCoordenadaXA() {
         return coordenadaXA;
     }
 
-    //Metodo set de las coordenadas en X y A
+    //Metodo set de las coordenadas en X del punto A
     public void setCoordenadaXA(double coordenadaXA) {
         this.coordenadaXA = coordenadaXA;
     }
 
-    //Metodo get de las coordenadas en Y y A
+    //Metodo get de las coordenadas en Y del punto A
     public double getCoordenadaYA() {
         return coordenadaYA;
     }
 
-    //Metodo set de las coordenadas en Y y A
+    //Metodo set de las coordenadas en Y del punto A
     public void setCoordenadaYA(double coordenadaYA) {
         this.coordenadaYA = coordenadaYA;
     }
 
-    //Metodo get de las coordenadas en X y B
+    //Metodo get de las coordenadas en X del punto B
     public double getCoordenadaXB() {
         return coordenadaXB;
     }
 
-    //Metodo set de las coordenadas en X y B
+    //Metodo set de las coordenadas en X del punto B
     public void setCoordenadaXB(double coordenadaXB) {
         this.coordenadaXB = coordenadaXB;
     }
 
-    //Metodo get de las coordenadas en Y y B
+    //Metodo get de las coordenadas en Y del punto B
     public double getCoordenadaYB() {
         return coordenadaYB;
     }
 
-    //Metodo set de las coordenadas en Y y B
+    //Metodo set de las coordenadas en Y del punto B
     public void setCoordenadaYB(double coordenadaYB) {
         this.coordenadaYB = coordenadaYB;
     }

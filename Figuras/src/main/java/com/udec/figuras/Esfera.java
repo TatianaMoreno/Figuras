@@ -17,8 +17,6 @@ public class Esfera extends Figuras3D{
         super(coordenadaXA, coordenadaYA, coordenadaXB, coordenadaYB);
     }
     
-    
-    
     @Override
     public void hallarDatos() {
         radio =hallarLado(this.getCoordenadaXA(), this.getCoordenadaYA(), this.getCoordenadaXB(), this.getCoordenadaYB());
