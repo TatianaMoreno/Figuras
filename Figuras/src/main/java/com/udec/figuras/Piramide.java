@@ -44,7 +44,17 @@ public class Piramide extends Figuras3D{
 
     @Override
     public void hallarTipo() {
-        this.setTipo("Piramide");
+        if(lado1 == lado2 && lado1==lado3 && lado2 ==lado3){
+            this.setTipo("Piramide con base Equilatera");
+            return;
+        }
+        if(lado1 == lado2 || lado1 == lado3 || lado2 == lado3){
+            this.setTipo("Piramide con base Isosceles");
+            return;
+        }
+        if(lado1 != lado2 && lado1 != lado3 && lado2 != lado3){
+            this.setTipo("Piramide con base Escalena");
+        }
     }
     //Metodo get del primer lado
     public double getLado1() {

@@ -57,6 +57,7 @@ public class Principal {
                     break;
                 default:
                     System.out.println("Esa figura no exste");
+                    continue;
             }
             System.out.println("Desea ingresar otra figura?(si/no): ");
             sigue = scannerStrings.nextLine();

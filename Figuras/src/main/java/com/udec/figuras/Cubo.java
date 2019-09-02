@@ -38,7 +38,15 @@ public class Cubo extends Figuras3D{
 
     @Override
     public void hallarTipo() {
-        this.setTipo("cubo");
+        if(lado1 == lado4 && lado2 == lado3 && lado1 == altura && lado2==altura && lado3==altura && lado4==altura){
+            this.setTipo("Cubo con base Cuadrada y aluta iguales");
+        }
+        else if(lado1 == lado3 && lado2 == lado4 || altura!= lado1 || altura != lado2){
+            this.setTipo("cubo con base Rectangular o altura diferente a los lados");
+        }
+        else{
+            this.setTipo("No es cuadrado ni rectangulo");
+        }
     }
 //Metodo get del primer lado de la figura
     public double getLado1() {
